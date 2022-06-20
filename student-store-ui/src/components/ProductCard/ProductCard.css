@@ -1,0 +1,9 @@
+.productCard .image img{
+    max-width: 800px;
+    height: 250px;
+    width: 245px;
+}
+
+img{
+    outline: 1px solid #22746b;
+}

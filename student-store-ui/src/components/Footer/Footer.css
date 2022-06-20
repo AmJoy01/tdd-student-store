@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    max-width: 100vw;
+    height: 300px;
+    background-color: #fff;
+}
+
+.footer .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: #fff;
+}
+
+.footer .container .top{
+    flex: 1;
+    padding-top: 40px;
+}
+.footer .container .bottom{
+    border-top: solid 1px black;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    padding-top: 40px;
+}
+
+.about .content .summary .media {
+    background: #2c4047;
+    height: 329px;
+}

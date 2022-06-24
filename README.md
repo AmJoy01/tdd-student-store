@@ -9,7 +9,7 @@ Selling merchandise in the modern era requires digital solutions. For this proje
     <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ea2cfc6da9134c70aee38aee9f2cb346-with-play.gif">
   </a>
 
-![Project2](https://user-images.githubusercontent.com/93353341/175096345-6a4b7f80-b30f-4973-bc0e-37e98caae568.gif)
+https://user-images.githubusercontent.com/93353341/175448676-e91114ee-1d51-4424-89b8-063c31353d32.mp4
 
 ### Application Features
 

@@ -12,8 +12,25 @@ export default function SubNavbar(props){
             <div className="container">
                 <div className="row">
                     <div className="search-bar">
-                        <input value = {props.searchInput} onChange={props.handleOnSearchInputChange} type="text" name = "search" placeholder="Searching..."/>
-                        <button>Search</button>
+                        <input 
+                        value = {props.searchInput} 
+                        onChange={props.handleOnSearchInputChange} 
+                        type="text" 
+                        name = "search" 
+                        placeholder="...search"/>
+                        <i className="materil-icons">Search</i>
+                    </div>
+
+                    <div className="links">
+                        <span className="help">
+                            {/* <i className="material-icons">Help</i> */}
+                            Help
+                        </span>
+                    </div>
+
+                    <div className="cart">
+                            Shopping Cart
+                            <i className="material-cons"></i>
                     </div>
                 </div>
 

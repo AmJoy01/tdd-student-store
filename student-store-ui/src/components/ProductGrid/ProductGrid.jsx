@@ -1,9 +1,8 @@
 import "./ProductGrid.css"
 import ProductCard from "../ProductCard/ProductCard"
-import Footer from "../Footer/Footer";
 
 export default function ProductGrid(props){
-console.log(props.products);   
+// console.log(props.products);   
    return(
 <div className="productGrid">
     <div className="container">
@@ -11,8 +10,10 @@ console.log(props.products);
         <div className="grid">
 
            {props.products.map((product) =>
-           <ProductCard key={product.id}
-           product = {product}/>
+           <ProductCard 
+           productId={product.id}
+           product = {product}
+           />
            )}
            {!props.products.length ?(
             <div className="card">

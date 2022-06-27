@@ -16,7 +16,7 @@ export default function Home(props) {
 
   return (
     <div className="home">
-      <Sidebar />
+      <Sidebar handleOnToggle = {props.handleOnToggle} isOpen = {props.isOpen}/>
       <Navbar />
       <Hero />
       <SubNavbar

@@ -43,7 +43,7 @@
 }
 
 
-.subNavbar .search-bar button{
+.subNavbar .container .search-bar i{
     height: 40px;
     width: 40px;
     background: #00c385;
@@ -52,6 +52,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.subNavbar .content .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+.subNavbar .content .help,
+.subNavbar .content .cart a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+
+.SubNavbar .content .help i {
+  color: #969696;
+  margin-right: 10px;
 }
 
 .SubNavbar .category-menu {

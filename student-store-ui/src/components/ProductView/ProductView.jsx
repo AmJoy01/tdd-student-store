@@ -5,7 +5,7 @@ import ProductCard from "../ProductCard/ProductCard"
 export default function ProductView(props){
     return(
         <div className="productView">
-            <h1 className="productId">Product # {props.productId}</h1>
+            <h1 className="productId">Product #{props.productId}</h1>
             <ProductCard product = {props.product}
             productId = {props.productId}
             image = {props.product.image}

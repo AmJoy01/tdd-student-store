@@ -7,3 +7,9 @@
 img{
     outline: 1px solid #22746b;
 }
+
+.product-info .product-price{
+    display: flex;
+    flex-direction: column;
+}
+

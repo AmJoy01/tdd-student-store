@@ -4,7 +4,8 @@
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
-https://user-images.githubusercontent.com/93353341/175448676-e91114ee-1d51-4424-89b8-063c31353d32.mp4
+
+https://user-images.githubusercontent.com/93353341/175838921-8355d7cf-83fa-45b4-8e39-e5c640e66a7e.mp4
 
 ### Application Features
 
@@ -14,8 +15,8 @@ https://user-images.githubusercontent.com/93353341/175448676-e91114ee-1d51-4424-
 - [x] On initial page load, display the products at the [GET /store endpoint](https://codepath-store-api.herokuapp.com/store).
 - [x] User can click on the categories (Clothing, food, etc) to filter the product grid by type.
 - [x] User can search for products.
-- [ ] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
-- [ ] User can click to expand the shopping cart in the left navigation.
+- [x] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
+- [x] User can click to expand the shopping cart in the left navigation.
 - [ ] User can click the '+' button on a product cart to increment that product in the shopping cart.
 - [ ] User can click the '-' button on a product cart to increment that product in the shopping cart.
 - [ ] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
@@ -132,7 +133,7 @@ The following specifications were met on the Express backend and the React front
 
 **ProductDetail.jsx**
 
-  - [ ] Should render JSX that is wrapped by a `div` element with a `className` of `product-detail`
+  - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-detail`
   - [ ] Should accept **at least** the following props:
     - `handleAddItemToCart` - handler function defined in the `App.jsx` component
     - `handleRemoveItemToCart` - handler function defined in the `App.jsx` component
@@ -147,7 +148,7 @@ The following specifications were met on the Express backend and the React front
 
 **ProductView.jsx**
 
-  - [ ] Should render JSX that is wrapped by a `div` element with a `className` of `product-view`
+  - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-view`
   - [ ] Should accept **at least** the following props:
     - `product` - the `product` object returned by the API request
     - `productId` - the id of the product extracted from the url
@@ -159,7 +160,7 @@ The following specifications were met on the Express backend and the React front
 
 **ProductCard.jsx**
 
-  - [ ] Should render JSX that is wrapped by a `div` element with a `className` of `product-card`
+  - [x] Should render JSX that is wrapped by a `div` element with a `className` of `product-card`
   - [ ] Should accept **at least** the following props:
     - `product` - a product object
     - `productId` - a `number` representing the `id` of the product
@@ -167,8 +168,8 @@ The following specifications were met on the Express backend and the React front
     - `handleAddItemToCart` - handler function
     - `handleRemoveItemToCart` - handler function
     - `showDescription` - boolean
-  - [ ] Should render the `name` of the product inside an element with the `className` of `product-name`
-  - [ ] Should render the `price` of the product inside an element with the `className` of `product-price`. The price should formatted so that it starts with a `$`, and has **at least one** integer digit, along with **exactly two** decimal digits. Examples - `$22.99`, `$860.20`, and `$0.50`
+  - [x] Should render the `name` of the product inside an element with the `className` of `product-name`
+  - [x] Should render the `price` of the product inside an element with the `className` of `product-price`. The price should formatted so that it starts with a `$`, and has **at least one** integer digit, along with **exactly two** decimal digits. Examples - `$22.99`, `$860.20`, and `$0.50`
   - [ ] If the `showDescription` prop is set to `true`, it should render the `description` of the product inside an element with the `className` of `product-description`.
   - [ ] Should render an `img` element for the product:
     - [ ] The `img` element should have a `src` attribute to set to the `image` property of the `product` prop.
@@ -285,22 +286,28 @@ The following specifications were met on the Express backend and the React front
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Yes. We went over React and APIs. I think Lab One prepared me for this project, however I wasn't able to do the stretch features in lab one. So some features on the project were difficult to finish.
+**Week 1**: Yes. We went over React and APIs. I think Lab One prepared me for this project, however I wasn't able to do the stretch features in lab one. So some features on the project were difficult to finish.
+
+**Week 2**: Yes. Though I did not complete all the core features, Lab 2 was very useful for the backend portion. I felt unprepared for the fron-end portion. I'm not comfortable with front-end. I just need more exercises to get comfortable with it.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Figuring out the page layout. Do the side bar and footer links
+**week 1**: Figuring out the page layout. Do the side bar and footer links
+
+**week 2**: Calmed down, and tried to complete the project. I'm in the process of learning more front-end coding using Udemy. If I had more time, I would have wanted to understand what I was learning and try to implement what I have learned to make this page pleasant to look at. Once the pressure is lifted, I want to look at this again, and make it better.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-The API layout went well. However clicking on the items sends the user to a blank page. 
+**week 1**: The API layout went well. However clicking on the items sends the user to a blank page. 
+**week 2**: Again the API layout, but this time clicking on the item sends the user to a page of the item. I finally figured out the sidebar. Just some CSS I had to figure out. 
 
 ### Open-source libraries used
 
-
+<a href="https://react-icons.github.io/react-icons/">React Icon</a>
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
 
-Jose, Dylan, and Roy
+**week 1**: Jose, Dylan, and Roy
+**week 2**: Angelo and Andrew

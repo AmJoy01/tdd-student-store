@@ -1,75 +1,30 @@
-import { useState } from "react"
-import "./SubNavBar.css"
+import "./SubNavbar.css"
 
-export default function SubNavbar(props){
-    
-    const[isOpen, setIsOpen] = useState(true);
-    const toggleOpen = () => setIsOpen((isOpen) => setIsOpen(!isOpen));
+export default function SubNavbar(props) {
+  
+    // const { handleOnSearchChange } = props
 
-
-    return(
-        <nav className="subNavbar">
-            <div className="container">
-                <div className="row">
-                    <div className="search-bar">
-                        <input 
-                        value = {props.searchInput} 
-                        onChange={props.handleOnSearchInputChange} 
-                        type="text" 
-                        name = "search" 
-                        placeholder="...search"/>
-                        <i className="materil-icons">Search</i>
-                    </div>
-
-                    <div className="links">
-                        <span className="help">
-                            {/* <i className="material-icons">Help</i> */}
-                            Help
-                        </span>
-                    </div>
-
-                    <div className="cart">
-                            Shopping Cart
-                            <i className="material-cons"></i>
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="hamburgerMenu">
-                        <button className="menu" onClick={() => toggleOpen()}>menu</button>
-                    </div>
-
-                    <ul className={`categoryMenu ${isOpen ? `open` : `closed`}`}>
-            {["All Categories", "Clothing", "Food", "Accessories", "Tech"].map((c) => (
-              <li key={c}>
-                <button onClick={() => props.setCategory(c)}>{c}</button>
-              </li>
-            ))}
-          </ul>
-
-                    {/* <ul className="categoryMenu open">
-                        
-                        <li className="isActive">
-                            <button>All Categories</button>
-                        </li>
-                        <li className="">
-                            <button>Clothing</button>
-                        </li>
-                        <li className="">
-                            <button>Food</button>
-                        </li>
-                        <li className="">
-                            <button>Accessories</button>
-                        </li>
-                        <li className="">
-                            <button>Tech</button>
-                        </li>
-                        
-                    </ul> */}
-                </div>
-            </div>
-        </nav>
-
-
+    return (
+        <div className="search-container">
+            <form className="search-bar">
+                <input className="search-input" placeholder="search..." onChange={props.handleOnSearchInputChange} />
+            </form>
+            <SearchCategories handleCategory={props.handleOnCategory} />
+        </div>
     )
+}
+
+export function SearchCategories(props) {
+
+    return (
+        <div className="category-buttons">
+            <button className="category" onClick={() => props.handleCategory("")}>All Items</button>
+            <button className="category" onClick={() => props.handleCategory("clothing")}>Clothing</button>
+            <button className="category" onClick={() => props.handleCategory("food")}>Food</button>
+            <button className="category" onClick={() => props.handleCategory("accessories")}>Accessories</button>
+            <button className="category" onClick={() => props.handleCategory("tech")}>Tech</button>
+        </div>
+        
+    )
+
 }

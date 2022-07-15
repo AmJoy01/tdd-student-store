@@ -28,6 +28,7 @@
 }
 
 .hero .container .intro h1 {
+    padding-left: 50px;
     color: #fff;
     font-size: 40px;
     font-weight: 600;
@@ -35,6 +36,7 @@
 }
   
 .hero .container .intro p {
+    padding-left: 50px;
     color: #fff;
     font-size: 20px;
     margin-top: 10px;

@@ -9,10 +9,15 @@ export default function ProductGrid(props){
         <h3>Best Selling Products</h3>
         <div className="grid">
 
-           {props.products.map((product) =>
-           <ProductCard 
-           productId={product.id}
+           {props.products.map((product, idx) =>
+           <ProductCard key ={idx}
+           showDescription = {false}
            product = {product}
+           productId={product.id}
+           shoppingCart = {props.shoppingCart}
+           quantity = {props.shoppingCart.quantity}
+           handleAddItemToCart = {props.handleAddItemToCart}
+           handleRemoveItemFromCart = {props.handleRemoveItemFromCart}
            />
            )}
            {!props.products.length ?(

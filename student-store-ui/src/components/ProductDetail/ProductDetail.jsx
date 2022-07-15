@@ -13,7 +13,6 @@ export default function ProductDetail(props){
         const getProduct = async () => {
             try{
                 const response = await axios.get("https://codepath-store-api.herokuapp.com/store/" + productId)
-                console.log(productId)
                 setProduct(response.data.product);
             }catch{
                 <h3 className="processing">Processing...</h3>
@@ -24,11 +23,14 @@ export default function ProductDetail(props){
 
     return(
         <div className="productDetail">
+            {/* {loading ? <h1 className="loading">Loading...</h1>: } */}
             <ProductView
                 product = {product}
+                shoppingCart = {props.shoppingCart}
+                quantity = {props.shoppingCart.quantity}
                 productId = {productId}
-                handleAddItemToCart = {null}
-                handleRemoveItemToCart = {null}
+                handleAddItemToCart = {props.handleAddItemToCart}
+                handleRemoveItemToCart = {props.handleRemoveItemToCart}
             />
         </div>
     )

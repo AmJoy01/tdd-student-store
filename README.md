@@ -1,11 +1,12 @@
-# Project #2: Student Store
+# Project #2: <a href="https://recordit.co/JmPAST3dSA">Student Store</a>
 
 ## Overview
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
 
-https://user-images.githubusercontent.com/93353341/175838921-8355d7cf-83fa-45b4-8e39-e5c640e66a7e.mp4
+![ezgif com-gif-maker (4)](https://user-images.githubusercontent.com/93353341/179125946-7e2378db-2a82-4699-be93-5b3a7c57c023.gif)
+
 
 ### Application Features
 
@@ -17,10 +18,10 @@ https://user-images.githubusercontent.com/93353341/175838921-8355d7cf-83fa-45b4-
 - [x] User can search for products.
 - [x] User can click on a product in the grid to view additional product details. Navigation is via a React Router.
 - [x] User can click to expand the shopping cart in the left navigation.
-- [ ] User can click the '+' button on a product cart to increment that product in the shopping cart.
-- [ ] User can click the '-' button on a product cart to increment that product in the shopping cart.
-- [ ] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
-- [ ] User can check out, and can view receipt upon completion.
+- [x] User can click the '+' button on a product cart to increment that product in the shopping cart.
+- [x] User can click the '-' button on a product cart to increment that product in the shopping cart.
+- [x] Shopping cart displays a table of products, quantities, subtotal, tax, and total.
+- [x] User can check out, and can view receipt upon completion.
 
 #### Stretch Features
 
@@ -311,3 +312,4 @@ Give a shout out to somebody from your cohort that especially helped you during 
 
 **week 1**: Jose, Dylan, and Roy
 **week 2**: Angelo and Andrew
+**Late Submission**: Rebecca, James, and Angelo

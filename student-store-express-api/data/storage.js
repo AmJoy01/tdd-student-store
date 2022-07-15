@@ -24,5 +24,5 @@ class Storage {
 }
 
 module.exports = {
-  storage: new Storage(),
+  storage: new Storage()
 }

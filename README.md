@@ -312,4 +312,5 @@ Give a shout out to somebody from your cohort that especially helped you during 
 
 **week 1**: Jose, Dylan, and Roy
 **week 2**: Angelo and Andrew
+<br>
 **Late Submission**: Rebecca, James, and Angelo
